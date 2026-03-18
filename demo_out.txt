@@ -1,0 +1,59 @@
+
+=======================================================
+  PING
+=======================================================
+Pinging Binance Futures Testnet...
+
+[EXIT CODE: 1]
+
+=======================================================
+  MARKET_BUY
+=======================================================
++--------------------------- Order Request Summary ---------------------------+
+| Symbol: BTCUSDT  Side: BUY  Type: MARKET  Qty: 0.002                        |
++-----------------------------------------------------------------------------+
+        Order Response         
++-----------------------------+
+| Field         | Value       |
+|---------------+-------------|
+| Order ID      | 12865214426 |
+| Symbol        | BTCUSDT     |
+| Status        | NEW         |
+| Side          | BUY         |
+| Type          | MARKET      |
+| Orig Qty      | 0.002       |
+| Executed Qty  | 0.000       |
+| Avg Price     | 0.00        |
+| Price         | 0.00        |
+| Time In Force | GTC         |
++-----------------------------+
+
+SUCCESS: Order successfully placed on Testnet!
+
+[EXIT CODE: 0]
+
+=======================================================
+  LIMIT_SELL
+=======================================================
++--------------------------- Order Request Summary ---------------------------+
+| Symbol: BTCUSDT  Side: SELL  Type: LIMIT  Qty: 0.002  Price: 74000.0        |
++-----------------------------------------------------------------------------+
+        Order Response         
++-----------------------------+
+| Field         | Value       |
+|---------------+-------------|
+| Order ID      | 12865214979 |
+| Symbol        | BTCUSDT     |
+| Status        | NEW         |
+| Side          | SELL        |
+| Type          | LIMIT       |
+| Orig Qty      | 0.002       |
+| Executed Qty  | 0.000       |
+| Avg Price     | 0.00        |
+| Price         | 74000.00    |
+| Time In Force | GTC         |
++-----------------------------+
+
+SUCCESS: Order successfully placed on Testnet!
+
+[EXIT CODE: 0]

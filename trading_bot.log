@@ -1,0 +1,71 @@
+2026-03-18 22:59:31,101 - TradingBot - INFO - Fetching current BTC mark price
+2026-03-18 22:59:31,302 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/premiumIndex with params: {'symbol': 'BTCUSDT'}
+2026-03-18 22:59:31,478 - TradingBot - DEBUG - Response status: 200
+2026-03-18 22:59:31,479 - TradingBot - DEBUG - Response body: {'markPrice': '71376.15000000', 'symbol': 'BTCUSDT'}
+2026-03-18 22:59:31,480 - TradingBot - INFO - BTC Mark Price: $71376.15, using quantity: 0.002 BTC (~$142.75 notional)
+
+2026-03-18 22:59:31,481 - TradingBot - INFO - Attempting to place MARKET BUY order for 0.002 BTCUSDT
+2026-03-18 22:59:31,482 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002, 'timestamp': 1773855201480, 'signature': 'a3c7e9f124568d...'}
+2026-03-18 22:59:31,589 - TradingBot - DEBUG - Response status: 200
+2026-03-18 22:59:31,590 - TradingBot - DEBUG - Response body: {'orderId': 12864769587, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'web_1Jdf92kLazOPmn', 'price': '0', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1773855201591}
+2026-03-18 22:59:31,591 - TradingBot - INFO - Order successfully placed: OrderID=12864769587 Status=NEW
+
+2026-03-18 22:59:32,001 - TradingBot - INFO - Attempting to place LIMIT SELL order for 0.002 BTCUSDT at price 74945.0
+2026-03-18 22:59:32,002 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.002, 'price': 74945.0, 'timeInForce': 'GTC', 'timestamp': 1773855202001, 'signature': 'f8b2d6a903c1e4...'}
+2026-03-18 22:59:32,095 - TradingBot - DEBUG - Response status: 200
+2026-03-18 22:59:32,096 - TradingBot - DEBUG - Response body: {'orderId': 12864769693, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'web_2Kgf93mNbzPQno', 'price': '74945.00', 'avgPrice': '0.00000', 'origQty': '0.002', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1773855202095}
+2026-03-18 22:59:32,097 - TradingBot - INFO - Order successfully placed: OrderID=12864769693 Status=NEW
+2026-03-18 23:28:10,913 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/ping with params: {}
+2026-03-18 23:28:12,392 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:28:12,392 - TradingBot - DEBUG - Response body: {}
+2026-03-18 23:28:20,251 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/ping with params: {}
+2026-03-18 23:28:21,685 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:28:21,685 - TradingBot - DEBUG - Response body: {}
+2026-03-18 23:30:22,866 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/ping with params: {}
+2026-03-18 23:30:24,805 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:30:24,806 - TradingBot - DEBUG - Response body: {}
+2026-03-18 23:31:20,680 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/ping with params: {}
+2026-03-18 23:31:21,960 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:31:21,960 - TradingBot - DEBUG - Response body: {}
+2026-03-18 23:31:21,968 - TradingBot - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-03-18 23:31:21,969 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1773856881968, 'signature': 'afaff1b9a1370d6d37280d27d90855b6c6e5ba9a3a236d01392b1733a83e0dff'}
+2026-03-18 23:31:22,447 - TradingBot - DEBUG - Response status: 400
+2026-03-18 23:31:22,447 - TradingBot - DEBUG - Response body: {'code': -4164, 'msg': "Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2026-03-18 23:31:22,448 - TradingBot - ERROR - API Error 400: [-4164] Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-03-18 23:31:22,448 - TradingBot - ERROR - Order failed due to API Error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-03-18 23:31:22,457 - TradingBot - INFO - Attempting to place LIMIT SELL order for 0.001 BTCUSDT
+2026-03-18 23:31:22,458 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 90000.0, 'timeInForce': 'GTC', 'timestamp': 1773856882457, 'signature': 'b9f819a920623aa7e3bbefc39fd50229e251698f63e6f6e09d05cc56b24ca8f1'}
+2026-03-18 23:31:23,017 - TradingBot - DEBUG - Response status: 400
+2026-03-18 23:31:23,017 - TradingBot - DEBUG - Response body: {'code': -4164, 'msg': "Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2026-03-18 23:31:23,017 - TradingBot - ERROR - API Error 400: [-4164] Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-03-18 23:31:23,018 - TradingBot - ERROR - Order failed due to API Error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-03-18 23:31:23,023 - TradingBot - INFO - Attempting to place MARKET BUY order for -0.001 BTCUSDT
+2026-03-18 23:31:23,028 - TradingBot - INFO - Attempting to place LIMIT BUY order for 0.001 BTCUSDT
+2026-03-18 23:31:52,851 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/ping with params: {}
+2026-03-18 23:31:54,368 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:31:54,368 - TradingBot - DEBUG - Response body: {}
+2026-03-18 23:31:54,379 - TradingBot - INFO - Attempting to place MARKET BUY order for 0.002 BTCUSDT
+2026-03-18 23:31:54,380 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002, 'timestamp': 1773856914379, 'signature': '95a7e0cd5d26882ba02ca8e6f299f868e6144cb5b29372d560e1db35cb735027'}
+2026-03-18 23:31:54,592 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:31:54,592 - TradingBot - DEBUG - Response body: {'orderId': 12865122428, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '1CyU2HazLDYUfpKEmKdVG9', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773856914643}
+2026-03-18 23:31:54,592 - TradingBot - INFO - Order successfully placed: OrderID=12865122428 Status=NEW
+2026-03-18 23:31:54,799 - TradingBot - INFO - Attempting to place LIMIT SELL order for 0.002 BTCUSDT
+2026-03-18 23:31:54,799 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.002, 'price': 90000.0, 'timeInForce': 'GTC', 'timestamp': 1773856914799, 'signature': '8655afc9a7f4858d96dd815a8aaf18d62da4728766e0e1348f8d3b4beb9289ea'}
+2026-03-18 23:31:54,988 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:31:54,988 - TradingBot - DEBUG - Response body: {'orderId': 12865122564, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'WSQQVMNxW0E8YjevjrMZEH', 'price': '90000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773856915055}
+2026-03-18 23:31:54,988 - TradingBot - INFO - Order successfully placed: OrderID=12865122564 Status=NEW
+2026-03-18 23:31:55,000 - TradingBot - INFO - Attempting to place MARKET BUY order for -0.001 BTCUSDT
+2026-03-18 23:31:55,005 - TradingBot - INFO - Attempting to place LIMIT BUY order for 0.001 BTCUSDT
+2026-03-18 23:39:09,222 - TradingBot - DEBUG - Sending GET request to https://testnet.binancefuture.com/fapi/v1/ping with params: {}
+2026-03-18 23:39:10,343 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:39:10,343 - TradingBot - DEBUG - Response body: {}
+2026-03-18 23:39:11,572 - TradingBot - INFO - Attempting to place MARKET BUY order for 0.002 BTCUSDT
+2026-03-18 23:39:11,573 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002, 'timestamp': 1773857351572, 'signature': '6789d68573bb4e4f89a84791a3d90ecd85122587da1586fdcf4904113a365682'}
+2026-03-18 23:39:12,641 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:39:12,641 - TradingBot - DEBUG - Response body: {'orderId': 12865214426, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'S8ZZKLVEtivw9mK2VJQcqQ', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773857352679}
+2026-03-18 23:39:12,642 - TradingBot - INFO - Order successfully placed: OrderID=12865214426 Status=NEW
+2026-03-18 23:39:13,853 - TradingBot - INFO - Attempting to place LIMIT SELL order for 0.002 BTCUSDT
+2026-03-18 23:39:13,854 - TradingBot - DEBUG - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.002, 'price': 74000.0, 'timeInForce': 'GTC', 'timestamp': 1773857353854, 'signature': 'b63e0763f58fbcd2c26aba993cfa346c9bd26c5ebf92aa5162342b3ca549baa4'}
+2026-03-18 23:39:15,338 - TradingBot - DEBUG - Response status: 200
+2026-03-18 23:39:15,338 - TradingBot - DEBUG - Response body: {'orderId': 12865214979, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'W1M209e7Wd2SpqDahmvye8', 'price': '74000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773857355375}
+2026-03-18 23:39:15,339 - TradingBot - INFO - Order successfully placed: OrderID=12865214979 Status=NEW

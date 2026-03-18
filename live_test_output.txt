@@ -1,0 +1,27 @@
+[INFO] Fetching current BTC market price...
+[INFO] BTC Mark Price: $71,376.15
+[INFO] Using quantity: 0.002 BTC (notional ~$142.75)
+
+=======================================================
+  TEST 1: MARKET BUY ORDER
+=======================================================
+[SUCCESS] Market BUY placed!
+  Order ID      : 12864769587
+  Symbol        : BTCUSDT
+  Status        : NEW
+  Executed Qty  : 0.000
+  Avg Price     : 0.00
+  Time          : 1773855201591
+
+=======================================================
+  TEST 2: LIMIT SELL ORDER (GTC, 5% above market)
+=======================================================
+[INFO] Limit price set at: $74,945.0 (5% above market, GTC)
+[SUCCESS] Limit SELL placed!
+  Order ID      : 12864769693
+  Symbol        : BTCUSDT
+  Status        : NEW
+  Price         : 74945.00
+  Orig Qty      : 0.002
+  Time In Force : GTC
+  Time          : 1773855202095
